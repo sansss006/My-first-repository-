@@ -1,0 +1,33 @@
+#include <iostream>
+#include<cstring>
+using namespace std;
+class student
+{
+    public:
+    string name;
+    float per;
+    public:
+    student();
+    
+    void display();
+};
+
+student::student()
+{
+    cout<<"enter name:"<<endl;
+    cin>>name;
+    cout<<"enter percentage:"<<endl;
+    cin>>per;
+}
+
+void student::display()
+{
+    cout<<"student details:"<<name<<" "<<per<<endl;
+}
+int main() {
+    student s1;
+
+    s1.display();
+
+    return 0;
+}
